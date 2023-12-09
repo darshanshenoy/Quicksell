@@ -1,0 +1,155 @@
+/* Reset and general styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Kanban board styles */
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.column {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.column-header {
+  background-color: #9cbdd0;
+  color: #fff;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ticket {
+  background-color: #ebecf0;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.ticket:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #172b4d;
+}
+
+.ticket p {
+  font-size: 14px;
+  color: #5e6c84;
+}
+
+/* Loading message styles */
+.loading {
+  text-align: center;
+  font-size: 20px;
+  color: #5e6c84;
+}
+/* App.css */
+.availability-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-top: 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.availability-tag.Available {
+  background-color: #c8e6c9; /* Light green color */
+  color: #2e7d32;
+}
+
+.availability-tag.Unavailable {
+  background-color: #ffcdd2; /* Light red color */
+  color: #c62828;
+}
+/* App.css */
+.priority-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-top: 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.priority-0 {
+  /* Urgent */
+  background-color: #d32f2f;
+}
+
+.priority-1 {
+  /* High Priority */
+  background-color: #f57c00;
+}
+
+.priority-2 {
+  /* Medium Priority */
+  background-color: #fbc02d;
+}
+
+.priority-3 {
+  /* Low Priority */
+  background-color: #388e3c;
+}
+
+.priority-4 {
+  /* Lowest Priority */
+  background-color: #add8e6;
+}
+/* App.css */
+.priority-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-top: 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.priority-0 {
+  /* Urgent Priority */
+  background-color: #ffcccb; /* Light red color */
+}
+
+.priority-1 {
+  /* High Priority */
+  background-color: #ffff99; /* Light yellow color */
+}
+
+.priority-2 {
+  /* Medium Priority */
+  background-color: #ffcc99; /* Lighter orange color */
+}
+
+.priority-3 {
+  /* Low Priority */
+  background-color: #add8e6; /* Light blue color */
+}

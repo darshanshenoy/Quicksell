@@ -1,0 +1,83 @@
+/* Base navbar styling */
+.navbar {
+  background-color: #2c3e50; /* Dark blue color */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Distributes space evenly between items */
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #b3c6ff; /* Light white and blue color */
+  color: white;
+  padding: 12px 20px; /* Increased padding for a larger button */
+  font-size: 18px; /* Increased font size for better readability */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 0.5px; /* Add some letter spacing */
+  border: 3px solid #e6e6e6; /* Light grey border for better visibility */
+  cursor: pointer;
+  border-radius: 6px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  outline: none; /* Remove outline */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the button */
+}
+
+/* Button hover effect */
+.dropbtn:hover {
+  background-color: #99aaff; /* Slightly darker shade of light blue for hover effect */
+  transform: translateY(-2px); /* Slight raise effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none; /* Changed to 'none' to hide by default */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  top: 100%; /* Aligns dropdown right below the button */
+  left: 0;
+}
+
+/* Dropdown link styling */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+/* Link hover effect */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block; /* Shows the dropdown content */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stacks items vertically */
+    padding: 20px;
+  }
+
+  .dropbtn,
+  .dropdown-content a {
+    width: 100%; /* Full width buttons and links */
+    text-align: left; /* Aligns text to the left */
+  }
+}

@@ -1,0 +1,123 @@
+/* SortedByUser.css */
+
+/* Overlay styles */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* White background with opacity */
+  z-index: 1000; /* Sit on top */
+}
+
+/* Show the overlay when 'active' class is added */
+.overlay.active {
+  display: block; /* Show the overlay */
+}
+
+/* Body and Navbar styles remain unchanged */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #0078d4;
+  padding: 10px 20px;
+}
+
+/* Dropdown Button */
+.navbar .dropdown .dropbtn {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Dropdown Content (Hidden by default) */
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Links inside the dropdown */
+.navbar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.navbar .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Sorted Tickets Container */
+.sorted-tickets-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* User Tickets styles */
+.user-tickets {
+  width: 100%;
+  max-width: 350px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* User Tickets Heading */
+.user-tickets h2 {
+  color: #0078d4;
+  margin-bottom: 15px;
+}
+
+/* Individual Ticket styles */
+.ticket {
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Hover effect for Tickets */
+.ticket:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Loading text style */
+.loading {
+  text-align: center;
+  font-size: 20px;
+  color: #5e6c84;
+}
